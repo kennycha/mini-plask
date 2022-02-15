@@ -12,6 +12,7 @@ import { isUndefined } from "lodash";
 import * as Plask from './plask3d'
 import Dropdown from "./components/Dropdown";
 import { getSplittedFileName } from "./utils";
+
 const App = () => {
   const renderingCanvas = useRef<HTMLCanvasElement>(null);
   const [scene, setScene] = useState<Plask.PlaskScene>();
