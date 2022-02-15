@@ -9,7 +9,7 @@
   1. Import and export .glb files.
   2. Visualize model.
   3. Debug with SkeletonViewer.
-  4. Control animations.
+  4. ~~Control animations.~~
 
 - Data Structures
 
@@ -28,3 +28,7 @@
      (like attaching gizmo, editing keyframes, customizing camera, and so on.)
 
   5. Make PR for this repository if you want my review or comments.
+
+- Updates (Feb 15th, 2022)
+
+  1. Created an inner module for Babylon.js for abstraction purpose.
