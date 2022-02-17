@@ -10,10 +10,10 @@ interface MotionDatum {
 }
 
 class PlaskMotion {
-  _id: string;
-  _name: string;
-  _modelId: string;
-  _data: MotionDatum[];
+  private _id: string;
+  private _name: string;
+  private _modelId: string;
+  private _data: MotionDatum[];
 
   constructor(modelId: string, motionName: string, targetedAnimations: BABYLON.TargetedAnimation[]) {
     this._id = getRandomStringKey()

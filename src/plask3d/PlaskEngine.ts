@@ -1,7 +1,7 @@
 import * as BABYLON from '@babylonjs/core'
 
 class PlaskEngine {
-  _engine: BABYLON.Engine;
+  private _engine: BABYLON.Engine;
 
   constructor(canvas: HTMLCanvasElement) {
     BABYLON.Animation.AllowMatricesInterpolation = true;

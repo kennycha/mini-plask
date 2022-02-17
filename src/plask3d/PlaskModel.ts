@@ -5,14 +5,14 @@ import PlaskMotion from './PlaskMotion';
 import PlaskScene from './PlaskScene';
 
 class PlaskModel {
-  _id: string;
-  _name: string;
-  _extension: Extension;
-  _rootMesh: BABYLON.AbstractMesh;
-  _meshes: BABYLON.AbstractMesh[];
-  _geometries: BABYLON.Geometry[];
-  _motions: PlaskMotion[];
-  _scene: PlaskScene;
+  private _id: string;
+  private _name: string;
+  private _extension: Extension;
+  private _rootMesh: BABYLON.AbstractMesh;
+  private _meshes: BABYLON.AbstractMesh[];
+  private _geometries: BABYLON.Geometry[];
+  private _motions: PlaskMotion[];
+  private _scene: PlaskScene;
 
   constructor(fileName: string, assetContainer: BABYLON.AssetContainer, scene: PlaskScene) {
     this._id = getRandomStringKey()

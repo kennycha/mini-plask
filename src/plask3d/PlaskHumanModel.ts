@@ -3,10 +3,10 @@ import PlaskModel from "./PlaskModel";
 import PlaskScene from './PlaskScene';
 
 class PlaskHumanModel extends PlaskModel {
-  _skeleton: BABYLON.Skeleton;
-  _bones: BABYLON.Bone[];
-  _transformNodes: BABYLON.TransformNode[];
-  _skeletonViewer: BABYLON.SkeletonViewer | null;
+  private _skeleton: BABYLON.Skeleton;
+  private _bones: BABYLON.Bone[];
+  private _transformNodes: BABYLON.TransformNode[];
+  private _skeletonViewer: BABYLON.SkeletonViewer | null;
   
   constructor(fileName: string, assetContainer: BABYLON.AssetContainer, scene: PlaskScene) {
     super(fileName, assetContainer, scene)

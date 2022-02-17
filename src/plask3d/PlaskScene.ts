@@ -5,13 +5,13 @@ import PlaskModel from './PlaskModel';
 import PlaskMotion from './PlaskMotion';
 
 class PlaskScene {
-  _engine: PlaskEngine;
-  _scene: BABYLON.Scene;
-  _cameras: BABYLON.ArcRotateCamera[];
-  _lights: (BABYLON.DirectionalLight | BABYLON.HemisphericLight)[];
-  _models: (PlaskModel | PlaskHumanModel)[];
-  _motions: PlaskMotion[];
-  _visualizedModels: (PlaskModel | PlaskHumanModel)[];
+  private _engine: PlaskEngine;
+  private _scene: BABYLON.Scene;
+  private _cameras: BABYLON.ArcRotateCamera[];
+  private _lights: (BABYLON.DirectionalLight | BABYLON.HemisphericLight)[];
+  private _models: (PlaskModel | PlaskHumanModel)[];
+  private _motions: PlaskMotion[];
+  private _visualizedModels: (PlaskModel | PlaskHumanModel)[];
 
   constructor(engine: PlaskEngine) {
     this._engine = engine
