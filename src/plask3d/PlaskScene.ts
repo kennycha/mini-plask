@@ -1,4 +1,5 @@
 import * as BABYLON from '@babylonjs/core';
+import "@babylonjs/loaders/glTF";
 import PlaskEngine from "./PlaskEngine";
 import PlaskHumanModel from './PlaskHumanModel';
 import PlaskModel from './PlaskModel';
